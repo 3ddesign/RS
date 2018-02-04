@@ -1,0 +1,13 @@
+@import "normalize";
+@import "variables";
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  line-height: 1.65;
+  position: relative;
+  background-color: #fff;
+  overflow-x: hidden;
+  opacity: 1;
+  font-family: $Montserrat;
+}
