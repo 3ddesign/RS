@@ -1,0 +1,46 @@
+@import '../../../../scss/app';
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: $OpenSans;
+  color: white;
+  font-weight: 500;
+  z-index: 5;
+  .right {
+    color: $main-color;
+  }
+}
+h3 {
+  margin-top: -29px;
+  font-family: $OpenSans;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 5;
+}
+
+header {
+  height: 100vh;
+  background-image: url('../../../../assets/images/header-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .header-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 $gutter;
+  }
+}
+
+.header-overlay {
+  position: absolute;
+  background-color: rgba(44,62,80,.6);
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}

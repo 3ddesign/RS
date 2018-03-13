@@ -5,13 +5,27 @@ import {DOMAIN} from '../config';
 import {AppComponent} from './app.component';
 import {MainComponent} from './main/main.component';
 import {MenuComponent} from './_shared/components/menu/menu.component';
+import { HeaderComponent } from './main/sections/header/header.component';
+import { ServicesComponent } from './main/sections/services/services.component';
+import { AboutComponent } from './main/sections/about/about.component';
+import { TechnologiesComponent } from './main/sections/technologies/technologies.component';
+import { CareerComponent } from './main/sections/career/career.component';
+import { BlogComponent } from './main/sections/blog/blog.component';
+import { ContactComponent } from './main/sections/contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    ServicesComponent,
+    AboutComponent,
+    TechnologiesComponent,
+    CareerComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     routing,

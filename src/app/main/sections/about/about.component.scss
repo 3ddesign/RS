@@ -1,0 +1,31 @@
+@import '../../../../scss/app';
+
+h2, h4 {
+  color: white;
+  z-index: 10;
+}
+
+section {
+  height: 100vh;
+  background-image: url('../../../../assets/images/about-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px $gutter;
+  }
+}
+
+.services-overlay {
+  position: absolute;
+  background-color: rgba(44,62,80,.8);
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}

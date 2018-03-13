@@ -1,5 +1,6 @@
-@import "normalize";
-@import "variables";
+@import 'normalize';
+@import 'variables';
+@import 'mixins.scss';
 
 body {
   font-size: 16px;
@@ -10,4 +11,29 @@ body {
   overflow-x: hidden;
   opacity: 1;
   font-family: $Montserrat;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #232323;
+  font-size: 32px;
+  font-family: $OpenSans;
+  font-weight: 500;
+  &:after {
+    content: '';
+    width: 87px;
+    margin-left: -119px;
+    margin-top: -18px;
+    height: 1px;
+    position: absolute;
+    background-color: $main-color;
+  }
+}
+
+h4 {
+  color: #484848;
+  font-size: 18px;
+  margin-top: -21px;
+  font-family: $OpenSans;
+  font-weight: 500;
 }
