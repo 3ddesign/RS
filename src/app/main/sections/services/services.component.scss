@@ -6,8 +6,6 @@ h2 {
   }
 }
 
-
-
 section {
   height: 100vh;
   .container {
@@ -18,5 +16,38 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
+  }
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  .block {
+    margin-top: 30px;
+    text-align: center;
+    font-family: $OpenSans;
+    width: 23%;
+    hr {
+      margin-top: 10px;
+      width: 30%;
+      border-top: 0;
+      border-bottom: 1px solid $main-color;
+    }
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p {
+      opacity: .6;
+      text-align: justify;
+      font-size: 14px;
+    }
+  }
+  @include respond-to($p770) {
+    display: none;
   }
 }

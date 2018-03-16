@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public isHoveredLogo: boolean = false;
 
-  constructor() { }
+  public ngOnInit(): void {
+  }
 
-  ngOnInit() {
+
+  public logoAnimation(): void {
+    this.isHoveredLogo = true;
+    setTimeout(() => {
+      this.isHoveredLogo = false;
+    }, 1000);
   }
 
 }

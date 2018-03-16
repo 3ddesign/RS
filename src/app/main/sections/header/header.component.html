@@ -1,7 +1,7 @@
-<header class="header-section" id="headerSection">
+<header class="header-section" id="homeSection">
   <div class="header-overlay"></div>
   <div class="header-container">
-    <h1><span class="right">Right</span>Stack</h1>
+    <h1 (mouseover)="logoAnimation()" [ngClass]="{isActive: isHoveredLogo}"><span class="right">Right</span>Stack</h1>
     <h3>we make your life easier</h3>
   </div>
 </header>

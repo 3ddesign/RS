@@ -1,1 +1,31 @@
-Services About us Technologies Career Blog Contact
+<div class="top-menu">
+  <div class="container">
+    <h5 class="top-logo" [ngx-scroll-to]="'#homeSection'"><span>Right</span>Stack Technologies</h5>
+    <nav class="menu">
+      <ul>
+        <li><a [ngClass]="{active: this.servicesBtn }" [ngx-scroll-to]="'#servicesSection'">Services</a></li>
+        <li><a [ngClass]="{active: this.aboutBtn }" [ngx-scroll-to]="'#aboutSection'">About us</a></li>
+        <li><a [ngClass]="{active: this.technologiesBtn }" [ngx-scroll-to]="'#technologiesSection'">Technologies</a></li>
+        <li><a [ngClass]="{active: this.careerBtn }" [ngx-scroll-to]="'#careerSection'">Career</a></li>
+        <li><a [ngClass]="{active: this.blogBtn }" [ngx-scroll-to]="'#blogSection'">Blog</a></li>
+        <li><a [ngClass]="{active: this.contactBtn }" [ngx-scroll-to]="'#contactSection'">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menuToggle">
+      <nav id="menuToggle">
+        <input type="checkbox" [checked]="isOpenMobMenu" (click)="toggleMobMenu()"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#servicesSection'">Services</a><br>
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#aboutSection'">About us</a><br>
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#technologiesSection'">Technologies</a><br>
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#careerSection'">Career</a><br>
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#blogSection'">Blog</a><br>
+          <a class="mob-mnu" (click)="toggleMobMenu()" [ngx-scroll-to]="'#contactSection'">Contact</a><br>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
