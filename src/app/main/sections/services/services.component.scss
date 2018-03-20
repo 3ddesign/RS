@@ -16,8 +16,15 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
+    @include respond-to($p770) {
+      height: 100%;
+    }
+  }
+  @include respond-to($p770) {
+    height: 100%;
   }
 }
+
 
 .blocks {
   display: flex;
@@ -48,6 +55,9 @@ section {
     }
   }
   @include respond-to($p770) {
-    display: none;
+    flex-direction: column;
+    .block {
+      width: 100%;
+    }
   }
 }

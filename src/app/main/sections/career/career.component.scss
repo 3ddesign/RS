@@ -6,8 +6,6 @@ h2 {
   }
 }
 
-
-
 section {
   height: 100vh;
   .container {
@@ -18,5 +16,58 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
+    @include respond-to($p770) {
+      height: 100%;
+    }
+  }
+  @include respond-to($p770) {
+    height: 100%;
+  }
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+  max-width: 1000px;
+  .block {
+    cursor: pointer;
+    border: 1px solid $main-color;
+    margin-top: 30px;
+    text-align: center;
+    font-family: $OpenSans;
+    padding: 10px;
+    width: 25%;
+    hr {
+      margin-top: 10px;
+      width: 30%;
+      border-top: 0;
+      border-bottom: 1px solid $main-color;
+    }
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p {
+      opacity: .6;
+      text-align: justify;
+      font-size: 14px;
+    }
+    &:hover {
+    background-color: lighten($main-color, 50);
+    }
+  }
+  @include respond-to($p770) {
+    flex-direction: column;
+    min-width: 10%;
+    max-width: 80%;
+    width: 100%;
+    .block {
+      margin: 10px auto;
+      width: 80%;
+    }
   }
 }

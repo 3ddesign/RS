@@ -57,15 +57,15 @@ export class MenuComponent implements OnInit {
     }
 
     if (window.scrollY > window.innerHeight * 5 - 50 && window.scrollY < window.innerHeight * 6) {
-      this.blogBtn = true;
-    } else {
-      this.blogBtn = false;
-    }
-
-    if (window.scrollY > window.innerHeight * 6 - 50 && window.scrollY < window.innerHeight * 7) {
       this.contactBtn = true;
     } else {
       this.contactBtn = false;
     }
+
+    // if (window.scrollY > window.innerHeight * 6 - 50 && window.scrollY < window.innerHeight * 7) {
+    //   this.contactBtn = true;
+    // } else {
+    //   this.contactBtn = false;
+    // }
   }
 }

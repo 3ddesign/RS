@@ -37,3 +37,23 @@ h4 {
   font-family: $OpenSans;
   font-weight: 500;
 }
+
+button {
+  outline: none;
+  padding: 5px 10px;
+  font-family: $OpenSans;
+  color: $main-color;
+  border: 1px solid $main-color;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: white;
+  transition: all .4s ease;
+  &:hover {
+    color: #000;
+    background-color: $main-color;
+ &:active {
+   background-color: darken($main-color, 10);
+ }
+  }
+}
