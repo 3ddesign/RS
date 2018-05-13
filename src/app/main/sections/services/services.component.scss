@@ -16,11 +16,11 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
-    @include respond-to($p770) {
+    @include respond-to($p930) {
       height: 100%;
     }
   }
-  @include respond-to($p770) {
+  @include respond-to($p930) {
     height: 100%;
   }
 }
@@ -54,6 +54,7 @@ section {
       font-size: 14px;
     }
   }
+
   @include respond-to($p770) {
     flex-direction: column;
     .block {
