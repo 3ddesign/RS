@@ -13,6 +13,8 @@ import { CareerComponent } from './main/sections/career/career.component';
 import { BlogComponent } from './main/sections/blog/blog.component';
 import { ContactComponent } from './main/sections/contact/contact.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { FormModalComponent } from './_shared/components/modals/form-modal/form-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,18 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     TechnologiesComponent,
     CareerComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    FormModalComponent,
+    // MatDialogModule
   ],
   imports: [
     ScrollToModule.forRoot(),
     routing,
     BrowserModule
   ],
+  // entryComponents: [
+  //   FormModalComponent
+  // ],
   providers: [
     {
       provide: 'DOMAIN',
