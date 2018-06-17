@@ -19,6 +19,9 @@ section {
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
+    @include respond-to($p480) {
+      padding: 0 15px;
+    }
   }
 }
 
@@ -39,7 +42,12 @@ p {
   font-family: $OpenSans;
 
   @include respond-to($p480) {
-    font-size: 9px;
+    font-size: 14px;
+    text-align: justify;
+  }
+  @include respond-to($p374) {
+    font-size: 12px;
+    text-align: justify;
   }
 }
 

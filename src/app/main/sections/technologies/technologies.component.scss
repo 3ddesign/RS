@@ -17,6 +17,9 @@ section {
     margin: auto;
     padding: 50px $gutter;
     text-align: center;
+    @include respond-to($p480) {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -36,4 +39,8 @@ p {
   margin-top: 20px;
   font-family: $OpenSans;
   font-weight: 500;
+  @include respond-to($p480) {
+    font-size: 14px;
+    text-align: justify;
+  }
 }

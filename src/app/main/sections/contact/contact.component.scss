@@ -16,10 +16,12 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-
     max-width: 1200px;
     margin: auto;
     padding: 50px $gutter;
+    @include respond-to($p480) {
+      padding: 0 20px;
+    }
   }
 }
 
@@ -43,6 +45,7 @@ section {
 
 .contacts {
   z-index: 10;
+  min-width: 180px !important;
   img {
     margin: 12px;
     width: 33px;
