@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-modal',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormModalComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  public constructor(public dialogRef: MatDialogRef<FormModalComponent>,
+                     @Inject(MAT_DIALOG_DATA) public data: any,
+                     private router: Router) {
   }
 
+  public ngOnInit(): void {
+  }
+
+  public closeDialog(): void {
+    this.dialogRef.close();
+  }
+
+  public leaveOrganization(): void {
+  }
 }

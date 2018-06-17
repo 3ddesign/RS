@@ -16,7 +16,7 @@
   margin: auto;
   padding: 0 $gutter;
   @include respond-to($p480) {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 

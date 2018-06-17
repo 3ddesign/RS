@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { FormModalComponent} from '../../../_shared/components/modals/form-modal/form-modal.component'
 
 @Component({
   selector: 'app-career',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CareerComponent implements OnInit {
 
-  constructor() { }
+  public text: string;
 
-  ngOnInit() {
+  public constructor(
+    public dialog: MatDialog
+  ) { }
+
+  public ngOnInit(): void {
+  }
+
+  public openModal(text: string): void {
+    let dialogRef = this.dialog.open(FormModalComponent, {
+      width: '310px',
+      data: { position: text }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 
 }

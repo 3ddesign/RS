@@ -14,7 +14,9 @@ import { BlogComponent } from './main/sections/blog/blog.component';
 import { ContactComponent } from './main/sections/contact/contact.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { FormModalComponent } from './_shared/components/modals/form-modal/form-modal.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material';
+import { MatDialogModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -29,17 +31,18 @@ import { MatDialogModule } from '@angular/material/dialog';
     BlogComponent,
     ContactComponent,
     FormModalComponent,
-    // MatDialogModule
   ],
   imports: [
     ScrollToModule.forRoot(),
     routing,
-    BrowserModule
+    BrowserModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
-  // entryComponents: [
-  //   FormModalComponent
-  // ],
-  providers: [
+  entryComponents: [
+    FormModalComponent
+  ],
+  providers: [MatDialog,
     {
       provide: 'DOMAIN',
       useValue: DOMAIN
