@@ -44,19 +44,19 @@ export class MenuComponent implements OnInit {
       this.aboutBtn = false;
     }
 
-    if (window.scrollY > window.innerHeight * 3 - 50 && window.scrollY < window.innerHeight * 4) {
+    if (window.scrollY > window.innerHeight * 3 - 50 && window.scrollY < window.innerHeight * 4 - 100) {
       this.technologiesBtn = true;
     } else {
       this.technologiesBtn = false;
     }
 
-    if (window.scrollY > window.innerHeight * 4 - 50 && window.scrollY < window.innerHeight * 5) {
+    if (window.scrollY > window.innerHeight * 4 - 100 && window.scrollY < window.innerHeight * 5 - 170) {
       this.careerBtn = true;
     } else {
       this.careerBtn = false;
     }
 
-    if (window.scrollY > window.innerHeight * 5 - 50 && window.scrollY < window.innerHeight * 6) {
+    if (window.scrollY > window.innerHeight * 5 - 170 && window.scrollY < window.innerHeight * 6) {
       this.contactBtn = true;
     } else {
       this.contactBtn = false;
