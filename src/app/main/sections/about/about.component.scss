@@ -34,7 +34,6 @@ section {
 }
 
 p {
-
   z-index: 5;
   color: white;
   opacity: .9;
@@ -82,7 +81,6 @@ p {
   }
   @include respond-to($p770) {
     flex-direction: column;
-
     h3, img, hr {
       display: none;
     }

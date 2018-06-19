@@ -13,7 +13,6 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-
     max-width: 1200px;
     margin: auto;
     @include respond-to($p770) {
