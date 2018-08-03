@@ -16,7 +16,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { FormModalComponent } from './_shared/components/modals/form-modal/form-modal.component';
 import { MatDialog } from '@angular/material';
 import { MatDialogModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   imports: [
     ScrollToModule.forRoot(),
     routing,
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'right-stack'}),
     MatDialogModule,
     BrowserAnimationsModule
   ],
